@@ -1,0 +1,474 @@
+/*============	Media Between Start ============ */
+
+@media screen and (min-width: 1321px) and (max-width: 1420px) {
+    .keo_key_fea_bg:before {
+        width: 41%;
+    }
+}
+
+
+/*============	Media Between Start ============ */
+
+@media screen and (min-width: 1200px) and (max-width: 1320px) {}
+
+
+/*============	Media 1199Px Start ============ */
+
+@media (max-width: 1199px) {
+    .keo_banner_bg {
+        padding: 100px 0px;
+    }
+
+    .keo_contact_form > form {
+        padding-left: 0px;
+    }
+
+    .keo_navigation > ul > li {
+        margin-right: 22px;
+    }
+
+    .keo_contact_form_pdg {
+        padding: 110px 0px 110px 20px;
+    }
+}
+
+
+/*============	Media Between Start ============ */
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .keo_price_detail {
+        font-size: 30px;
+    }
+
+    .keo_hdg_01 > p {
+        padding: 0px 120px;
+    }
+
+    .keo_sub_banner > p {
+        padding: 0px 130px;
+    }
+
+    .keo_nex_prev_post > a {
+        font-size: 14px;
+    }
+}
+
+
+/*============	Media 768Px Start ============ */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .keo_hdg_01 > p {
+        padding: 0px 90px;
+    }
+
+    .keo_sub_banner > p {
+        padding: 0px 40px;
+    }
+}
+
+
+/*============ Media 767Px Start ============ */
+
+@media (max-width: 991px) {
+    .dl-menuwrapper {
+        display: inline-block;
+        float: right;
+        margin-top: 20px;
+    }
+
+    .dl-menuwrapper .login {
+        margin-left: 10px;
+    }
+
+    .keo_navigation {
+        display: none;
+    }
+
+    .keo_banner_text {
+        padding: 0px;
+    }
+
+    .keo_form_outer {
+        width: 100%;
+    }
+
+    .keo_faqs_outer {
+        width: 100%;
+    }
+
+    .keo_histry_bg {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .keo_histry_wrap {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 50px 0px 30px;
+    }
+
+    .keo_aside_outer {
+        margin-top: 50px;
+    }
+
+    .keo_histry_bg:before {
+        width: 100%;
+    }
+
+    .keo_fact_wrap {
+        margin-bottom: 30px;
+    }
+
+    .keo_facts_bg {
+        padding-bottom: 20px;
+    }
+
+    .keo_faqs_mrgn {
+        margin-bottom: 30px;
+    }
+
+    .keo_dedicated_server table tbody tr td {
+        padding: 8px 4px;
+    }
+}
+
+
+/*============ Media 767Px Start ============ */
+
+@media (max-width: 767px) {
+    .keo_hostnow_img {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .keo_blog_share {
+        text-align: center;
+    }
+
+    .keo_blog_share .float-left,
+    .keo_blog_share .float-right {
+        float: none !important;
+        display: block;
+    }
+
+    .keo_blog_share h5 {
+        margin-bottom: 15px;
+    }
+
+    .keo_contact_map {
+        position: relative !important;
+        height: 400px;
+    }
+
+    .keo_contact_form.pt_100.pb_100 {
+        padding: 50px 0px;
+    }
+
+    .keo_domain_search .keo_domain_field button {
+        line-height: 36px;
+    }
+
+    .keo_hdg_01 > p {
+        padding: 0px 10px;
+    }
+
+    .keo_sub_banner > p {
+        padding: 0px 10px;
+    }
+
+    .keo_sub_banner {
+        padding-bottom: 40px;
+    }
+
+    .keo_contact_form_pdg {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .keo_faqs_bg_01:before {
+        display: none;
+    }
+}
+
+
+/*============ Media 767Px Start ============ */
+
+@media (max-width: 767px) and (orientation: portrait) {
+    .keo_header_01 .keo_logo {
+        padding: 10px 0;
+        margin-top: 0 !important;
+    }
+
+    .dl-menuwrapper {}
+
+    .dl-menuwrapper ul.dl-menu {
+        text-align: left;
+    }
+
+    .keo_banner_text > h4 {
+        font-size: 26px;
+    }
+
+    .keo_domain_field {
+        text-align: center;
+    }
+
+    .keo_domain_field > input[type="text"] {
+        margin-bottom: 15px;
+    }
+
+    .keo_domain_field > button {
+        position: relative !important;
+        border-radius: 4px;
+        line-height: 44px;
+    }
+
+    .keo_checkbox_list > ul > li {
+        width: 49%;
+        margin-right: 0px;
+    }
+
+    .keo_form_outer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .gt_comment_list_wrap > ul > li > ul,
+    .gt_comment_list_wrap > ul > li > ul > li > ul {
+        padding-left: 0px;
+    }
+
+    .keo_team_slider .slick-list .keo_team_wrap {
+        margin-right: 0px;
+    }
+
+    .keo_blog_detail_outer > h4 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .keo_faqs_outer .card-header > h5 {
+        font-size: 16px;
+        padding: 13px 32px 13px 10px;
+    }
+
+    .keo_404_wrap > h3 {
+        line-height: normal;
+        font-size: 30px;
+    }
+
+    .keo_404_wrap > p {
+        font-size: 20px;
+    }
+}
+
+
+/*============ Media 767Px and Landscape Start ============ */
+
+@media (max-width: 767px) and (orientation: landscape) {}
+
+
+/*============ Media 480Px Star ============ */
+
+@media (max-width: 480px) {}
+
+
+/*============ Media 320Px Star ============ */
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .keo_banner02_bg {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .banner_btn li a:first-child {
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .keo_client_name .tweet_info {
+        top: 20px;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 433px) {
+    .keo_404_wrap > a {
+        margin: 20px 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .popup__content {
+        width: 95%;
+    }
+}
+
+@media (max-width: 991px) {
+    .popup__content {
+        width: 90%;
+        height: 95%;
+        display: block;
+        overflow: scroll;
+    }
+
+    .popup__right h3 {
+        font-size: 35px;
+    }
+
+    .popup__right .keo_contact_info > h5 {
+        padding-top: 30px;
+    }
+
+    .popup__close:link,
+    .popup__close:visited {
+        display: none;
+    }
+
+    .popup__close1:link,
+    .popup__close1:visited {
+        display: block;
+    }
+
+    .keo_404_bg {
+        padding: 100px 0px;
+    }
+
+    .keo_main_content.keo_404_bg.m {
+        padding: 195px 0px 110px;
+        text-align: center;
+    }
+
+    .keo_launch_website p {
+        padding: 0px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    /*.keo_header_01.keo_transparent_header.navcss {
+    background: #FFF !important;
+}*/
+
+    .keo_price_wrap {
+        margin-top: 40px;
+        box-shadow: 8px 8px 20px 0px rgba(0, 0, 0, 0.09), -8px -8px 20px 0px rgba(0, 0, 0, 0.09);
+    }
+
+
+
+    .keo_footer_bg .text-center {
+        text-align: justify !important;
+    }
+
+    .keo_foo_widget img {
+        padding-top: 25px;
+    }
+
+    .popup__left {
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    .popup__right {
+        width: 100%;
+        display: block;
+        vertical-align: middle;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .popup__right h3 {
+        font-size: 30px;
+    }
+
+    .popup__right h4 {
+        font-size: 20px;
+    }
+
+    .keo_key_fea_bg:before {
+        width: 100%;
+        background-attachment: fixed;
+    }
+
+    .keo_key_fea_bg.keo_bg_img .col-md-8 {
+        background: rgba(0, 0, 0, 0.5)
+    }
+
+    .keo_feat_list ul {
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .key_des h5 {
+        color: #2bcb6b;
+    }
+
+    .keo_successful_img {
+        text-align: center;
+    }
+
+    .key_des p {
+        color: #fff;
+
+    }
+
+    .keo_contact_info > h5 {
+        padding-top: 30px;
+    }
+
+    .keo_histry_bg:before {
+        display: none;
+    }
+
+    .res {
+        background-image: url(../extra-images/histry_bg_01.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 300px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .keo_footer_bg .keo_foo_get_touch ul.mb-0.pl-0 a {
+        margin-right: 5px !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media (min-width:992px) and (max-width: 1199px) {
+    .keo_fact_wrap > h5 {
+        text-align: center !important;
+    }
+
+    .keo_fact_value {
+        padding: 0px 0px 0px 130px;
+    }
+}
+
+@media (min-width:992px) and (max-width: 1019px) {
+    .keo_fact_wrap:before {
+        right: -20px;
+    }
+}
+
+@media (min-width:992px) and (max-width: 1005px) {
+    .popup__content {
+        width: 97%;
+    }
+}
+
+@media (min-width:576px) and (max-width: 610px) {
+    .keo_fact_wrap:before {
+        right: -20px;
+    }
+}

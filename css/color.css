@@ -1,0 +1,216 @@
+/**
+=============================================================
+[Main Stylesheet]
+
+Template:     Hostsun
+Version:      1.0
+Created:      02.02.2019
+Primary use:  Hostsun Responsive, Hosting, Domain and Technology Template
+
+@Author: kode4everyone
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+====================[Table of contents]======================
+
+* 1.0 - Font Color
+* 2.0 - Background Color
+* 3.0 - Border Color
+* 4.0 - Transaction Effect
+* 5.0 - Transform & Rotate Effect
+* 6.0 - Transform Effect
+* 7.0 - Rotation Effect in Positive
+* 8.0 - Rotation Effect in Negative
+* 9.0 - Single Border Color Wrap CSS
+* 10.0 - Content Selection
+
+[Color codes]
+
+Background Color, Text Color, Border Color:	#2bcb6b (Lime)
+
+=============================================================
+**/
+
+/*
+	============================================================
+		Font Color
+	============================================================
+*/
+a:hover,
+.theme_color,
+.theme_color_hover:hover,
+.keo_team_des .keo_team_social li a:hover,
+.keo_header_01.keo_transparent_header .keo_navigation>ul>li:hover>a,
+.keo_faqs_outer .card-header>h5[aria-expanded="true"]:before,
+.keo_team_slider .slick-current.keo_team_wrap h5,
+.keo_navigation>ul>li.active>a,
+.keo_header_01.keo_transparent_header .keo_navigation>ul>li.active>a
+{
+	color:#8c8bdd;	
+}
+/*
+	============================================================
+		Background Color
+	============================================================
+*/
+.theme_bg,
+.theme_bg_hover:hover,
+.keo_navigation>ul>li.active:before,
+.keo_navigation>ul>li:hover:before,
+.keo_awesome_slider .owl-item.center .keo_awesome_wrap,
+.keo_awesome_slider .owl-dots .owl-dot.active,
+.keo_client_feedback .owl-dots .owl-dot.active,
+.keo_pagination_outer .pagination .page-item .page-link:hover,
+.keo_feat_list ul::-webkit-scrollbar-thumb,
+.keo_price_plan_hover:hover,
+.keo_price_plan_hover.active,
+.banner_btn li a:hover,
+.banner_btn li a.active,
+.keo_navigation ul ul>li:hover>a,
+.dl-menuwrapper button,
+.keo_awesome_bg:before,
+.keo_home2_host_wrap ul::-webkit-scrollbar-thumb,
+.keo_team_slider .slick-dots li.slick-active button
+{
+	background-color:#8c8bdd;	
+}
+{
+	background-color: rgba(43,203,107,0.85);
+}
+
+/*
+	  ============================================================
+		   Border Color
+	  ============================================================
+*/
+.theme_border,
+.theme_border_hover:hover,
+.keo_header_01.keo_transparent_header .keo_navigation .login,
+.keo_contact_form>form input[type="text"]:focus,
+.keo_contact_form>form input[type="email"]:focus,
+.keo_contact_form>form textarea:focus,
+.keo_domain_search .keo_domain_field input[type="text"],
+.keo_domain_search .keo_domain_field button,
+.keo_domain_field>button,
+.banner_btn li a
+{
+	border-color:#8c8bdd;	
+}
+/*
+	  ============================================================
+		   Transaction Effect
+	  ============================================================
+*/
+.keo_social_link ul li a:hover{
+	transition:all 0.1s ease-in-out;
+	-webkit-transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+	-o-transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+}
+:before,
+:after,
+.time,
+i,
+body h1, body h2, body h3, body h4, body h5, body h6,
+a,
+span,
+.keo_price_wrap ul li,
+.keo_awesome_wrap,
+.keo_team_wrap,
+.keo_team_social
+{
+	transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;	
+}
+.time2{
+	transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+}
+.time3{
+	transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -webkit-transition: all 0.8s ease 0s;
+}
+/*
+	  ============================================================
+		   Transform & Rotate Effect
+	  ============================================================
+*/
+
+{
+	transform:scale(1.3) rotateZ(-6deg);
+	-moz-transform:scale(1.3) rotateZ(-6deg);
+	-webkit-transform:scale(1.3) rotateZ(-6deg);	
+}
+
+/*
+	  ============================================================
+		   Transform Effect
+	  ============================================================
+*/
+
+{
+	transform:scale(1);
+	-moz-transform:scale(1);
+	-webkit-transform:scale(1);	
+}
+
+/*
+	  ============================================================
+		   Rotation Effect in Positive
+	  ============================================================
+*/
+
+{
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+}
+	
+	/*
+	  ============================================================
+		   Rotation Effect in Negative
+	  ============================================================
+*/
+
+{
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+}
+
+/*
+	  ============================================================
+		  Single Border Color Wrap CSS
+	  ============================================================
+*/
+
+{
+	border-bottom:10px solid #2bcb6b;	
+}
+
+
+/*
+	  ============================================================
+		  Content Selection
+	  ============================================================
+*/
+::selection {
+    background: #8c8bdd;
+    color:#ffffff;
+}
+::-webkit-selection {
+    background: #8c8bdd;
+    color: #ffffff;
+}
+::-moz-selection {
+    background: #8c8bdd;
+    color: #ffffff;
+}

@@ -1,0 +1,2127 @@
+/**
+=============================================================
+[Main Stylesheet]
+
+Template:     Hostsun
+Version:      1.0
+Created:      02.02.2019
+Primary use:  Hostsun Responsive, Hosting, Domain and Technology Template
+
+@Author: kode4everyone
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+====================[Table of contents]======================
+
+* 1.0 - Import css start
+* 2.0 - Navigation css start
+* 3.0 - DL Menu css start
+* 4.0 - Login Button css start
+* 5.0 - Banner css start
+* 6.0 - Heading css start
+* 7.0 - Awesome Feature css start
+* 8.0 - Host Now css start
+* 9.0 - Price List css start
+* 10.0 - Need Help css start
+* 11.0 - Faqs css start
+* 12.0 - Client Feedback css start
+* 13.0 - Latest Blog css start
+* 14.0 - Sponser css start
+* 15.0 - Header 02 Transparent css start
+* 16.0 - Sub banner css start
+* 17.0 - Successfull css start
+* 18.0 - Launch Website css start
+* 19.0 - Team Member css start
+* 20.0 - Facts and Figure css start
+* 21.0 - Histry css start
+* 22.0 - Contact Us css start
+* 23.0 - Contact Us Map css start
+* 24.0 - Blog Single css start
+* 25.0 - Blog Detail css start
+* 26.0 - Blog Share css start
+* 27.0 - Blog Next and Previous css start
+* 28.0 - Detail Page Heading css start
+* 29.0 - User Comment css start
+* 30.0 - Blog Detail Comment Form css start
+* 31.0 - Pagnation css start
+* 32.0 - Faqs css start
+* 33.0 - Dedicated Server css start
+* 34.0 - Key Feature css start
+* 35.0 - Domain Search css start
+* 36.0 - Banner 02 css start
+* 37.0 - Learn About css start
+* 38.0 - Index 03 css start
+* 39.0 - Index 02 Host wrap css start
+* 40.0 - Headroom wrap css start
+* 41.0 - 404 wrap css start
+
+[Color codes]
+
+Background:	#ffffff (White)
+Content:	#939393 (Light Gray)
+Header h1:	#343434 (Grey Black)
+Header h2:	#343434 (Black)
+Footer:		#939393 (Gray)
+
+a (standard):	#343434 (black)
+a (visited):	#2bcb6b (Lime)
+a (active):	#2bcb6b (Lime)
+
+[Typography]
+  
+Body copy:		16px/ 'Lato', sans-serif;
+Headers:		'Open Sans', sans-serif;
+Input, textarea:	'Open Sans', sans-serif;
+
+=============================================================
+**/
+
+/*
+	==============================================================
+		Import css start
+	==============================================================
+*/
+@import url("bootstrap.min.css");
+@import url("component.css");
+@import url("fontawesome.css");
+@import url("widget.css");
+@import url("typography.css");
+@import url("global.css");
+@import url("flaticon.css");
+
+/*
+	==============================================================
+		Top bar css start
+	==============================================================
+*/
+.keo_header_01 {
+    border-bottom: 1px solid #e4e4e4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #fff !important;
+}
+
+.keo_header_01 .keo_logo {
+    padding: 25px 0px;
+    transition: all linear .3s;
+}
+
+/*
+	==============================================================
+		Navigation css start
+	==============================================================
+*/
+.keo_navigation > ul {
+    padding: 17px 0;
+}
+
+.keo_navigation > ul > li {
+    margin-right: 30px;
+}
+
+.keo_navigation > ul > li:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+}
+
+.keo_navigation > ul > li.active:before,
+.keo_navigation > ul > li:hover:before {
+    width: 100%;
+}
+
+.keo_navigation > ul > li > a {
+    padding: 30px 0px;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/*2nd*/
+.keo_navigation ul ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    top: 110%;
+    left: 0px;
+    background-color: #fff;
+    box-shadow: 8px 8px 35px 0px rgba(153, 153, 153, 0.08), -8px -8px 35px 0px rgba(153, 153, 153, 0.08);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.keo_navigation ul ul li {
+    width: 100%;
+}
+
+.keo_navigation ul ul li a {
+    padding: 15px 15px;
+    display: block;
+}
+
+.keo_navigation ul > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.keo_navigation ul ul > li:hover > a {
+    color: #fff;
+}
+
+/*3rd*/
+.keo_navigation ul ul ul {
+    left: 110%;
+    top: 0px;
+}
+
+.keo_navigation ul ul > li:hover > ul {
+    left: 100%;
+    top: 0px;
+}
+
+/*
+	==============================================================
+		DL Menu css start
+	==============================================================
+*/
+.dl-menuwrapper {
+    display: none;
+    z-index: 1000;
+    width: auto;
+    max-width: initial;
+}
+
+.dl-menuwrapper li > a:after,
+.dl-menuwrapper li.dl-back:after {
+    color: #ffffff;
+}
+
+.dl-menuwrapper button.dl-active,
+.dl-menuwrapper ul {
+    background-color: #333 !important;
+}
+
+#dl-menu > ul {
+    width: 300px;
+    max-width: 300px;
+    right: 0px;
+}
+
+/*
+	==============================================================
+		Login Button css start
+	==============================================================
+*/
+.login {
+    color: #fff;
+    line-height: 40px;
+    padding: 0px 25px;
+    border-radius: 30px;
+    border: 1px solid;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.login:hover {
+    background-color: #fff;
+}
+
+/*
+	==============================================================
+		Banner css start
+	==============================================================
+*/
+.keo_banner_bg {
+    background-image: url('../images/banner_bg_01.jpg');
+    padding: 180px 0px 190px;
+}
+
+.keo_banner_text {
+    padding: 0px 80px;
+}
+
+.keo_banner_text > h4 {
+    font-size: 38px;
+}
+
+.keo_form_outer {
+    width: 730px;
+    padding: 25px 25px 20px;
+    border: 1px solid #e4e4e4;
+    box-shadow: 8px 8px 35px 0px rgba(153, 153, 153, 0.08), -8px -8px 35px 0px rgba(153, 153, 153, 0.08);
+    border-radius: 3px;
+}
+
+.keo_domain_field {}
+
+.keo_domain_field > input[type="text"] {
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    height: 50px;
+}
+
+.keo_domain_field > button {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 190px;
+    color: #fff;
+    line-height: 46px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.keo_domain_field > button:hover {
+    background-color: #343434;
+    border-color: #343434;
+}
+
+.keo_domain_field > button > i {
+    margin-left: 5px;
+}
+
+.keo_checkbox_list > ul > li {
+    margin-right: 10px;
+}
+
+.keo_checkbox_list > ul > li:last-child {
+    margin-right: 0px;
+}
+
+/* The chk_label */
+.chk_label {
+    display: block;
+    position: relative;
+    padding-left: 22px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.chk_label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.chk_label:hover input ~ .checkmark {
+    border: 1px solid #e4e4e4;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chk_label input:checked ~ .checkmark {
+    border-color: #2bcb6b;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.chk_label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.chk_label .checkmark:after {
+    left: 5px;
+    top: -3px;
+    width: 6px;
+    height: 12px;
+    border: solid #2bcb6b;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*
+	==============================================================
+		Heading css start
+	==============================================================
+*/
+.keo_hdg_01 {
+    margin-top: -7px;
+    margin-bottom: 55px;
+}
+
+.keo_hdg_01 > p {
+    padding: 0px 200px;
+}
+
+.keo_hdg_01 > h3 {
+    margin-bottom: 15px;
+    line-height: 100%;
+}
+
+/*
+	==============================================================
+		Awesome Feature css start
+	==============================================================
+*/
+.keo_awesome_wrap_01 {
+    padding-top: 110px;
+    padding-bottom: 104px;
+}
+
+.keo_awesome_bg {
+    padding-top: 110px;
+    padding-bottom: 104px;
+}
+
+.keo_awesome_bg:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70%;
+}
+
+.keo_awesome_wrap {
+    background-color: #fafafb;
+    padding: 50px 30px 46px;
+}
+
+.keo_awesome_wrap > i {
+    font-size: 50px;
+    margin-bottom: 24px;
+    display: block;
+    line-height: 100%;
+}
+
+.keo_awesome_wrap > h3 {
+    line-height: 17px;
+    margin-bottom: 24px;
+}
+
+.keo_awesome_wrap > h3 > a {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.keo_awesome_wrap > p {
+    margin-bottom: 0px;
+}
+
+.keo_awesome_wrap > a {
+    text-decoration: underline;
+    display: none;
+}
+
+/*Owl Carousel*/
+.keo_awesome_slider .owl-item.center {
+    box-shadow: 0px 0px 35px 10px rgba(52, 52, 52, 0.08);
+    z-index: 10;
+    position: relative;
+}
+
+.keo_awesome_slider .owl-item.center .keo_awesome_wrap {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.keo_awesome_slider .owl-item.center .keo_awesome_wrap > i,
+.keo_awesome_slider .owl-item.center .keo_awesome_wrap > h3 > a,
+.keo_awesome_slider .owl-item.center .keo_awesome_wrap > p,
+.keo_awesome_slider .owl-item.center .keo_awesome_wrap > a {
+    color: #fff;
+}
+
+.keo_awesome_slider .owl-item.center .keo_awesome_wrap > p {
+    margin-bottom: 15px;
+}
+
+.keo_awesome_slider .owl-item.center .keo_awesome_wrap > a {
+    display: block;
+}
+
+.keo_awesome_slider .owl-stage-outer {
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.keo_awesome_slider .owl-dots {
+    text-align: center;
+}
+
+.keo_awesome_slider .owl-dots .owl-dot {
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #e4e4e4;
+    margin-right: 5px;
+}
+
+.keo_awesome_slider .owl-dots .owl-dot.active {
+    width: 40px;
+}
+
+/*
+	==============================================================
+		Host Now css start
+	==============================================================
+*/
+.keo_hostnow_bg {
+    padding-top: 110px;
+    padding-bottom: 72px;
+}
+
+.gt_hostnow_wrap {
+    margin-bottom: 36px;
+}
+
+.gt_hostnow_wrap .keo_hostnow_icon {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+
+.gt_hostnow_des {
+    padding: 5px 0px 0px 40px;
+    float: none;
+    width: auto;
+}
+
+.gt_hostnow_des > h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 100%;
+}
+
+/*
+	==============================================================
+		Price List css start
+	==============================================================
+*/
+.keo_price_bg_02 {
+    background: #fff;
+    padding: 110px 0px 110px;
+}
+
+.keo_price_bg_02 a {
+    margin: 100px auto 0;
+    padding: 0px 40px;
+    border-radius: 40px;
+    border: 1px solid;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.keo_price_bg_02 a:hover {
+    background-color: #fff;
+}
+
+
+.keo_price_bg {
+    padding: 110px 0px 110px;
+    background-image: url('../extra-images/price_plan_bg_01.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+.keo_price_wrap {
+    background: #fafafb;
+    padding: 48px 0px 50px;
+    box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.09), -8px -8px 35px 0px rgba(0, 0, 0, 0.09);
+}
+
+.keo_price_wrap > h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.keo_price_detail {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.keo_price_detail .price_plan {
+    font-size: 16px;
+}
+
+.keo_price_wrap ul {
+    list-style: none;
+}
+
+.keo_price_wrap ul li {
+    padding: 15px 0px 14px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.keo_price_wrap ul li:last-child {
+    border-bottom: 0px;
+}
+
+.keo_price_wrap > a {
+    margin: 0;
+    padding: 0px 40px;
+    border-radius: 40px;
+    border: 1px solid;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.keo_price_wrap > a:hover {
+    background-color: #fff;
+}
+
+/*Style 02*/
+.keo_price_plan_hover.keo_price_wrap:hover > h4,
+.keo_price_plan_hover.keo_price_wrap.active > h4 {
+    color: #343434;
+}
+
+.keo_price_plan_hover:hover .keo_price_detail .price_plan .slach,
+.keo_price_plan_hover:hover .keo_price_detail,
+.keo_price_plan_hover.active .keo_price_detail {
+    color: #fff;
+}
+
+.keo_price_plan_hover.keo_price_wrap:hover ul li,
+.keo_price_plan_hover.keo_price_wrap.active ul li {
+    color: #e2fdef;
+    border-bottom-color: #17ba58;
+}
+
+/*
+	==============================================================
+		Need Help css start
+	==============================================================
+*/
+.keo_need_help_bg {
+    padding: 103px 0px;
+    background-image: url('../extra-images/need_help_01.png');
+    background-attachment: fixed;
+}
+
+.keo_need_help_bg.overlay_dark:before {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.keo_need_help_wrap {}
+
+.keo_need_help_wrap > h4 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.keo_need_help_wrap > p {
+    margin-bottom: 50px;
+}
+
+.keo_need_help_wrap > span {
+    margin-bottom: 10px;
+}
+
+.keo_tel_num {
+    font-size: 24px;
+}
+
+/*
+	==============================================================
+		Faqs css start
+	==============================================================
+*/
+.keo_faqs_bg {
+    padding: 110px 0px 100px;
+}
+
+.keo_faqs_outer {
+    width: 730px;
+    margin: auto;
+}
+
+.keo_faqs_outer .card {
+    border: 0px;
+    margin-bottom: 10px;
+}
+
+.keo_faqs_outer .card-header {
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+}
+
+.keo_faqs_outer .card-header > h5 {
+    font-size: 18px;
+    line-height: normal;
+    padding: 13px 32px 13px 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.keo_faqs_outer .card-header > h5:before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    color: #343434;
+    border-style: solid;
+    border-width: 0.15em 0.15em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.6em;
+    transform: rotate(135deg) translateY(-50%);
+    width: 0.6em;
+}
+
+.keo_faqs_outer .card-header > h5[aria-expanded="true"]:before {
+    transform: rotate(-45deg);
+}
+
+.keo_faqs_outer .card-header > h5[aria-expanded="true"] {
+    border-color: #e4e4e4;
+    background-color: #fafafb;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.keo_faqs_outer .card-body {
+    line-height: 28px;
+    padding: 20px 30px;
+    border-top: transparent;
+}
+
+.keo_faqs_outer .card .card-body {
+    border-bottom: 1px solid #e4e4e4;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    background-color: #fafafb;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/*
+	==============================================================
+		Client Feedback css start
+	==============================================================
+*/
+.keo_client_bg {
+    background-color: #fff;
+    padding: 110px 0px 105px;
+}
+
+.keo_client_des {
+    background: #fafafb;
+    box-shadow: -8px 8px 5px 0px rgba(0, 0, 0, 0.08), -8px -8px 16px 0px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e4e4e4;
+    padding: 22px 25px 30px;
+    border-radius: 3px;
+}
+
+.keo_client_des > p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.keo_client_biography {
+    border-top: 2px solid #e4e4e4;
+    padding: 15px 0px 0px;
+}
+
+.keo_client_biography > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+
+.keo_client_name {
+    float: none;
+    padding: 5px 0px 0px 55px;
+}
+
+.keo_client_name > h5 {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.keo_client_name > span {
+    font-size: 14px;
+}
+
+.keo_client_name .tweet_info {
+    right: 0px;
+    top: 9px;
+    font-size: 20px;
+}
+
+/*Owl Carousel*/
+.keo_client_feedback .owl-stage-outer {
+    padding-bottom: 30px;
+}
+
+.keo_client_feedback .owl-dots {
+    text-align: center;
+    height: 0;
+}
+
+.keo_client_feedback .owl-dots .owl-dot {
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #e4e4e4;
+    margin-right: 5px;
+}
+
+.keo_client_feedback .owl-dots .owl-dot.active {
+    width: 40px;
+}
+
+/*
+	==============================================================
+		Latest Blog css start
+	==============================================================
+*/
+.keo_blog_bg {
+    padding: 110px 0px 78px;
+}
+
+.keo_blog_wrap {}
+
+.keo_blog_wrap figure {}
+
+.keo_blog_wrap figure img {
+    border-radius: 4px;
+}
+
+.keo_blog_des {}
+
+.keo_blog_des .blog_date {
+    margin-bottom: 5px;
+}
+
+.keo_blog_des > h5 {
+    line-height: 30px;
+}
+
+.keo_blog_des > h4 > a {
+    font-size: 18px;
+}
+
+.keo_blog_des > h5:hover {
+    text-decoration: underline;
+}
+
+/*
+	==============================================================
+		Sponser css start
+	==============================================================
+*/
+.keo_sponser_bg {}
+
+.keo_sponser_outer_wrap {
+    padding: 60px 0px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.keo_sponser_wrap img {
+    display: inline-block !important;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.keo_sponser_wrap:hover img {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/*
+	==============================================================
+		Header 02 Transparent css start
+	==============================================================
+*/
+.keo_header_01.keo_transparent_header {
+    border-bottom: 0px;
+    background-color: transparent !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.keo_header_01.keo_transparent_header .keo_navigation > ul > li:before {
+    display: none;
+}
+
+.keo_header_01.keo_transparent_header .keo_navigation > ul > li > a {
+    color: #fff;
+}
+
+.keo_header_01.keo_transparent_header.headroom--pinned {
+    background-color: #ffffff;
+}
+
+.keo_header_01.keo_transparent_header.headroom--pinned .keo_navigation > ul > li > a {
+    color: #343434;
+}
+
+.keo_header_01.keo_transparent_header.headroom--pinned .keo_navigation > ul > li:before {
+    display: block;
+}
+
+/*
+	==============================================================
+		Sub banner css start
+	==============================================================
+*/
+.keo_sub_banner_bg {
+    background-image: url('../extra-images/sub_banner_01.png');
+    min-height: 440px;
+}
+
+.keo_sub_banner_bg.overlay_dark:before {
+    background-color: rgba(0, 0, 0, 0.60)
+}
+
+.keo_sub_banner {
+    padding-top: 190px;
+}
+
+.keo_sub_banner > h3 {
+    font-size: 34px;
+}
+
+.keo_sub_banner > p {
+    padding: 0px 200px;
+}
+
+/*
+	==============================================================
+		Successfull css start
+	==============================================================
+*/
+.keo_successfull_wrap {
+    padding: 106px 0px 110px;
+}
+
+.keo_successfull_des > a {
+    padding: 0px 40px;
+    border-radius: 40px;
+    border: 1px solid;
+    line-height: 42px;
+    font-size: 16px;
+}
+
+.keo_successfull_des > a:hover {
+    background-color: #fff;
+}
+
+/*
+	==============================================================
+		Launch Website css start
+	==============================================================
+*/
+.keo_lunch_website_bg {
+    padding: 104px 0px 110px;
+    background-image: url(../extra-images/launch_website_bg.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.keo_lunch_website_bg > h4 {
+    margin-bottom: 50px;
+}
+
+.keo_launch_website > a {
+    padding: 0px 40px;
+    border-radius: 40px;
+    border: 1px solid;
+    line-height: 42px;
+    font-size: 16px;
+}
+
+.keo_launch_website > a:hover {
+    background-color: #fff;
+}
+
+.keo_launch_website p {
+    padding: 0px 180px;
+}
+
+/*
+	==============================================================
+		Team Member css start
+	==============================================================
+*/
+.keo_team_bg {
+    padding: 110px 0px 108px;
+}
+
+.keo_team_wrap {
+    background-color: #fcfbfe;
+    padding: 50px 10px;
+    border: 1px solid transparent;
+}
+
+.keo_team_wrap > img {
+    display: inline-block !important;
+    border-radius: 100%;
+    width: 99px;
+    height: 99px;
+    margin-bottom: 25px;
+}
+
+.keo_team_des {}
+
+.keo_team_des > h5 {
+    font-size: 18px;
+}
+
+.keo_team_des .keo_designation {
+    margin-bottom: 0px;
+}
+
+.keo_team_des .keo_team_social {
+    list-style: none;
+    display: none;
+    margin-top: 5px;
+}
+
+.keo_team_des .keo_team_social li {}
+
+.keo_team_des .keo_team_social li a {
+    margin-right: 8px;
+    color: #939393;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.keo_team_des .keo_team_social li a:last-child {
+    margin-right: 0px;
+}
+
+/*Owl Carousel*/
+.keo_team_slider .slick-list {
+    padding: 0px 0px 40px !important;
+}
+
+.keo_team_slider .slick-list .keo_team_wrap {
+    margin-right: 20px;
+}
+
+.keo_team_slider .slick-current.keo_team_wrap,
+.keo_team_slider .keo_team_wrap:hover {
+    background-color: #fff;
+    box-shadow: 8px 8px 35px 0px rgba(153, 153, 153, 0.08), -8px -8px 35px 0px rgba(153, 153, 153, 0.08);
+    border: 1px solid #e4e4e4;
+}
+
+.keo_team_slider .slick-current.keo_team_wrap h5,
+.keo_team_slider .slick-current.keo_team_wrap h5:hover {
+    text-decoration: underline;
+}
+
+.keo_team_slider .slick-current .keo_team_des .keo_team_social,
+.keo_team_slider .keo_team_wrap:hover .keo_team_social {
+    display: block;
+}
+
+.keo_team_slider .slick-dots {
+    text-align: center;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.keo_team_slider .slick-dots li {
+    display: inline-block;
+}
+
+.keo_team_slider .slick-dots li button {
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #e4e4e4;
+    margin-right: 5px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 0px;
+    outline: none;
+}
+
+.keo_team_slider .slick-dots li.slick-active button {
+    width: 40px;
+}
+
+/*
+	==============================================================
+		Facts and Figure css start
+	==============================================================
+*/
+.keo_facts_bg {
+    padding: 50px 0px;
+}
+
+.keo_facts_outer .col-md-6:last-child .keo_fact_wrap:before,
+.keo_facts_outer .col-lg-6:last-child .keo_fact_wrap:before {
+    display: none;
+}
+
+.keo_fact_wrap {
+    position: relative;
+}
+
+.keo_fact_wrap:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: -30px;
+    margin: auto;
+    width: 1px;
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.keo_fact_wrap > h5 {
+    color: #e2fdef;
+    font-size: 16px;
+    width: 130px;
+    font-weight: lighter;
+    line-height: 28px;
+    margin-bottom: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.keo_fact_value {
+    font-size: 35px;
+    float: none;
+    padding: 0px 0px 0px 160px;
+}
+
+.keo_fact_value .counter {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+	==============================================================
+		Histry css start
+	==============================================================
+*/
+.keo_histry_bg {
+    padding: 104px 0px 85px;
+}
+
+.keo_histry_bg:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 49%;
+    height: 100%;
+    background-image: url(../extra-images/history_bg_01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.keo_histry_wrap {}
+
+.keo_histry_wrap ul {}
+
+.keo_histry_wrap ul li {
+    margin-bottom: 40px;
+}
+
+.keo_histry_wrap ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.keo_histry_wrap ul li .date {
+    margin-bottom: 5px;
+}
+
+.keo_histry_wrap ul li h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.keo_histry_wrap ul li p {}
+
+/*
+	==============================================================
+		Contact Us css start
+	==============================================================
+*/
+.keo_contact_info {}
+
+.keo_contact_info > h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.keo_contact_info > p {
+    margin-bottom: 0px;
+}
+
+.keo_contact_info > a {
+    color: #939393;
+    text-decoration: underline;
+}
+
+/*
+	==============================================================
+		Contact Us Map css start
+	==============================================================
+*/
+.keo_contact_map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.keo_contact_map .map-canvas {
+    height: 100%;
+}
+
+.keo_contact_form {}
+
+.keo_contact_form_pdg {
+    padding: 110px 0px;
+}
+
+.keo_contact_form > form {
+    padding-left: 50px;
+}
+
+.keo_contact_form > form input[type="text"],
+.keo_contact_form > form input[type="email"],
+.keo_contact_form > form textarea {
+    background-color: #fafafb;
+    height: 52px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border: 1px solid #e4e4e4;
+    padding: 8px 15px;
+    outline: none;
+}
+
+.keo_contact_form > form textarea {
+    height: 160px;
+    border-radius: 3px;
+}
+
+.keo_contact_form > form input[type="submit"],
+.keo_contact_form > form button {
+    border-radius: 4px;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.keo_contact_form > form input[type="submit"]:hover,
+.keo_contact_form > form button:hover {
+    background-color: #fff;
+}
+
+/*
+	==============================================================
+		Blog Single css start
+	==============================================================
+*/
+.keo_blog_single_bg {
+    padding: 110px 0px;
+}
+
+/*
+	==============================================================
+		Blog Detail css start
+	==============================================================
+*/
+.keo_blog_detail_outer {}
+
+.keo_blog_detail_outer .blog_date {
+    margin-bottom: 15px;
+}
+
+.keo_blog_detail_outer > h4 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    line-height: 44px;
+}
+
+.keo_blog_detail_outer > p > b {
+    color: #343434;
+}
+
+/*
+	==============================================================
+		Blog Share css start
+	==============================================================
+*/
+.keo_blog_share {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.keo_blog_share > h5 {
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+.keo_blog_share ul {}
+
+.keo_blog_share ul li {}
+
+.keo_blog_share ul li a {
+    font-size: 16px;
+    border-right: 1px solid #e4e4e4;
+    padding: 0px 6px;
+    color: #939393;
+}
+
+.keo_blog_share ul li a:last-child {
+    border-right: 0px;
+}
+
+/*
+	==============================================================
+		Blog Next and Previous css start
+	==============================================================
+*/
+.keo_nex_prev_post {}
+
+.keo_nex_prev_post > span {
+    margin-bottom: 8px;
+}
+
+.keo_nex_prev_post > a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*
+	==============================================================
+		Detail Page Heading css start
+	==============================================================
+*/
+.keo_detail_hdg {
+    font-size: 22px;
+}
+
+/*
+	  ============================================================
+		User Comment css start
+	  ============================================================
+*/
+.gt_comment_list_wrap ul {
+    float: left;
+    width: 100%;
+    list-style: none;
+}
+
+.gt_comment_list_wrap ul li {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gt_comment_list_wrap > ul > li:first-child {
+    padding-top: 0px;
+}
+
+.gt_comment_list_wrap > ul > li:last-child {
+    margin-bottom: 0px;
+}
+
+.gt_comment_wrap {
+    float: left;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 30px;
+}
+
+.gt_comment_wrap figure {
+    width: 70px;
+    float: left;
+    position: relative;
+    border-radius: 100%;
+}
+
+.gt_comment_wrap figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.gt_comment_des {
+    float: none;
+    width: auto;
+    padding: 0px 0px 0px 90px;
+}
+
+.gt_comment_des h5 {}
+
+.gt_comment_des h5 > a {
+    font-size: 16px;
+}
+
+.gt_comment_des > a {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.gt_comment_des > a i {}
+
+.gt_comment_date {
+    position: relative;
+    margin: 0px 0px 10px;
+}
+
+.gt_comment_date span {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.gt_comment_date span:first-of-type {
+    margin-left: 0px;
+}
+
+/*Second Ul*/
+.gt_comment_list_wrap > ul > li > ul {
+    padding-left: 100px;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+.gt_comment_list_wrap > ul > li > ul > li > ul {
+    padding-left: 100px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.gt_comment_list_wrap > ul > li > ul .gt_comment_wrap {
+    border: 0px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.gt_comment_list_wrap ul ul li .gt_comment_wrap {
+    padding: 0px 0px 30px;
+}
+
+.gt_comment_list_wrap ul ul li:last-child {
+    margin-bottom: 0px;
+}
+
+/*
+	==============================================================
+		Blog Detail Comment Form css start
+	==============================================================
+*/
+.keo_blog_detail_form.keo_contact_form form {
+    padding-left: 0px;
+}
+
+/*
+	==============================================================
+		Pagnation css start
+	==============================================================
+*/
+.keo_pagination_outer {}
+
+.keo_pagination_outer .pagination {
+    margin-bottom: 0px;
+}
+
+.keo_pagination_outer .pagination .page-item {}
+
+.keo_pagination_outer .pagination .page-item:last-child {
+    margin-right: 0px;
+}
+
+.keo_pagination_outer .pagination .page-item .page-link {
+    padding: 0px;
+    text-align: center;
+    color: #343434;
+    background-color: #fafafb;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin-right: 10px;
+}
+
+.keo_pagination_outer .pagination .page-item .page-link:hover {
+    color: #fff;
+}
+
+/*
+	==============================================================
+		Faqs css start
+	==============================================================
+*/
+.keo_faqs_bg_01 {}
+
+.keo_faqs_bg_01:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-image: url(../extra-images/faqs_bg_01.jpg);
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+}
+
+.keo_faqs_bg2 {
+    padding: 110px 0px 110px;
+    background-image: url(../extra-images/faqs_bg_02.jpg);
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+}
+
+.keo_faqs_outer.keo_faqs_width {
+    width: 100%;
+}
+
+/*
+	==============================================================
+		Dedicated Server css start
+	==============================================================
+*/
+.keo_dedicated_bg {
+    padding: 110px 0px;
+}
+
+.keo_dedicated_server {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+}
+
+.keo_dedicated_server table {
+    margin-bottom: 0px;
+}
+
+.keo_dedicated_server table thead tr th {
+    font-weight: normal;
+    border: 0px;
+}
+
+.keo_dedicated_server table tbody tr {
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+
+.keo_dedicated_server table tbody tr td {
+    border: 0px;
+    vertical-align: middle;
+    padding: 8px 20px;
+}
+
+.keo_dedicated_server table tbody tr td a {
+    background-color: #fbfcfe;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    padding: 3px 14px;
+    display: inline-block;
+}
+
+.keo_dedicated_server table tbody tr td a:hover {
+    color: #fff;
+}
+
+.keo_dedicated_server table .empty {
+    height: 15px;
+}
+
+/*
+	==============================================================
+		Key Feature css start
+	==============================================================
+*/
+.keo_key_fea_bg:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 43%;
+    height: 100%;
+    background-image: url(../extra-images/key_feature_01.jpg);
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+}
+
+.keo_feat_list {
+    padding: 110px 0px;
+}
+
+.keo_feat_list ul {
+    height: 430px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-right: 40px;
+    padding-left: 80px;
+}
+
+.key_outer_wrap {
+    border: 1px solid #fff;
+    padding: 20px 20px;
+    border-radius: 4px;
+}
+
+.key_icon {
+    font-size: 50px;
+    width: 50px;
+}
+
+.key_des {
+    width: auto;
+    padding: 0px 0px 0px 60px;
+}
+
+.key_des h5 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.key_des p {
+    margin-bottom: 0px;
+}
+
+/*Scroll bar*/
+/* width */
+.keo_feat_list ul::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+
+.key_outer_wrap:hover {
+    box-shadow: 8px 8px 35px 0px rgba(153, 153, 153, 0.08), -8px -8px 35px 0px rgba(153, 153, 153, 0.08);
+    border: 1px solid #e4e4e4;
+}
+
+/* Track */
+.keo_feat_list ul::-webkit-scrollbar-track {
+    background: #e4e4e4;
+    border-radius: 10px;
+}
+
+/* Handle */
+.keo_feat_list ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+/*
+	==============================================================
+		Domain Search css start
+	==============================================================
+*/
+.keo_domain_search_bg {
+    background-image: url('../extra-images/domain_search_bg.jpg');
+    background-size: auto;
+    padding: 110px 0px 106px;
+}
+
+.keo_domain_search {}
+
+.keo_domain_search form {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.keo_domain_search .keo_domain_field {
+    box-shadow: 8px 8px 35px 0px rgba(153, 153, 153, 0.08), -8px -8px 35px 0px rgba(153, 153, 153, 0.08);
+}
+
+.keo_domain_search .keo_domain_field input[type="text"] {
+    background-color: #fff;
+    border-radius: 30px;
+    border: 2px solid;
+    outline: none;
+}
+
+.keo_domain_search .keo_domain_field button {
+    border-radius: 30px;
+    border: 2px solid;
+    line-height: 46px;
+}
+
+/*
+	==============================================================
+		Banner 02 css start
+	==============================================================
+*/
+.keo_banner02_bg {
+    height: 100vh;
+    background-image: url('../extra-images/banner_01.jpg');
+}
+
+.keo_banner02_bg.overlay_dark:before {
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+.keo_banner_des {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.keo_banner_des h2 {
+    margin-bottom: 30px;
+    line-height: 52px;
+    font-size: 38px;
+}
+
+.keo_banner_des p {
+    margin-bottom: 30px;
+}
+
+.banner_btn {}
+
+.banner_btn li {}
+
+.banner_btn li a {
+    display: inline-block;
+    border: 2px solid;
+    min-width: 188px;
+    min-height: 38px;
+    color: #fff;
+    border-radius: 30px;
+    line-height: 40px;
+}
+
+.banner_btn li a:first-child {
+    margin-right: 20px;
+}
+
+.banner_btn li a:hover,
+.banner_btn li a.active {
+    color: #fff;
+}
+
+/*
+	==============================================================
+		Learn About css start
+	==============================================================
+*/
+.keo_learn_point {}
+
+.keo_learn_point > li {
+    margin-bottom: 15px;
+}
+
+.keo_learn_point > li:last-child {
+    margin-bottom: 0px;
+}
+
+.keo_learn_point > li > i {
+    margin-right: 8px;
+}
+
+.keo_rotate_190 {
+    transform: -moz- rotateY(190deg);
+    transform: -webkit- rotateY(190deg);
+    transform: rotateY(190deg);
+}
+
+.keo_sponser_border_bottom {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+/*
+	==============================================================
+		Index 03 css start
+	==============================================================
+*/
+.keo_domain_search_bg_01 {
+    background-image: url(../extra-images/domain_search_form_01.jpg);
+    padding: 110px 0px 106px;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+}
+
+.keo_domain_search_bg_01 .keo_domain_search .keo_domain_field input[type="text"] {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    box-shadow: 8px 8px 35px 0px rgba(153, 153, 153, 0.08), -8px -8px 35px 0px rgba(153, 153, 153, 0.08);
+}
+
+.keo_domain_search_bg_01 .keo_domain_search .keo_domain_field button {
+    background-color: #ffffff;
+    color: #343434;
+    border: 2px solid #ffffff;
+}
+
+.keo_domain_search_bg_01 .chk_label {
+    color: #ffffff;
+}
+
+.keo_domain_search_bg_01 .chk_label input:checked ~ .checkmark {
+    border-color: #ffffff;
+}
+
+.keo_domain_search_bg_01 .chk_label input:checked ~ .checkmark:after {
+    border-color: #ffffff;
+}
+
+/*
+	==============================================================
+		Home2 Host wrap css start
+	==============================================================
+*/
+.keo_hostnow_bg02 {
+    background-image: url('../extra-images/domain_search_bg.jpg');
+    background-size: auto;
+    padding: 110px 0px 110px;
+}
+
+.keo_home2_host_wrap {}
+
+.keo_home2_host_wrap > ul {
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-right: 40px;
+}
+
+.keo_home2_host_wrap > ul::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+
+/* Track */
+.keo_home2_host_wrap > ul::-webkit-scrollbar-track {
+    background: #e4e4e4;
+    border-radius: 10px;
+}
+
+/* Handle */
+.keo_home2_host_wrap > ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.keo_home2_host_wrap > ul > li {}
+
+.keo_hostnow_bg02 a {
+    margin: 10px auto 0;
+    padding: 0px 40px;
+    border-radius: 40px;
+    border: 1px solid;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.keo_hostnow_bg02 a:hover {
+    background-color: #fff;
+}
+
+/*
+	==============================================================
+		Headroom wrap css start
+	==============================================================
+*/
+/**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
+ */
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+}
+
+/*
+	==============================================================
+		404 wrap css start
+	==============================================================
+*/
+.keo_404_bg {
+    padding: 195px 0px 110px;
+    text-align: center;
+}
+
+.keo_404_text {
+    margin-bottom: 50px;
+}
+
+.keo_404_text > img {
+    width: auto;
+    height: auto;
+}
+
+.keo_404_wrap {}
+
+.keo_404_wrap > h3 {
+    font-size: 42px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.keo_404_wrap > p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.keo_404_wrap > a {
+    display: inline-block;
+    min-width: 180px;
+    color: #ffffff;
+    border-radius: 30px;
+    border: 1px solid;
+    padding: 11px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.keo_404_wrap > a:hover {
+    background-color: transparent;
+}
+
+
+/*for fixed menu*/
+.keo_header_01.keo_transparent_header.navcss {
+    background: rgba(0, 0, 0, 0.72) !important;
+}
+
+
+
+
+.navcss .keo_logo {
+    padding: 10px 0px;
+    margin-top: 0 !important;
+    transition: all linear .3s;
+}
+
+.navcss .keo_navigation > ul {
+    padding: 10px 0;
+}
+
+.navcss .keo_navigation > ul > li > a {
+    padding: 20px 0px;
+}
+
+/*for fixed menu*/
+
+/*for popup*/
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.3)
+    }
+}
+
+.popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) scale(0.25);
+    transform: translate(-50%, -50%) scale(0.25);
+    -webkit-transition: all .5s .2s;
+    transition: all .5s .2s;
+    padding: 30px 15px;
+}
+
+.popup__left {
+    width: 33.333333%;
+    display: table-cell;
+    padding: 0 15px;
+}
+
+.popup__right {
+    width: 66.6666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1rem 5rem
+}
+
+.popup__img {
+    display: block;
+    width: 100%
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible
+}
+
+.popup:target .popup__content {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.popup__close:link,
+.popup__close:visited,
+.popup__close1:link,
+.popup__close1:visited {
+    color: #777;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    line-height: 1
+}
+
+.popup__close1:link,
+.popup__close1:visited {
+    position: fixed;
+    top: 5%;
+    right: 7%;
+    z-index: 9;
+    display: none;
+}
+
+.popup__close:hover {
+    color: #55c57a
+}
+
+.popup .keo_price_wrap {
+    background: #2bcb6b;
+    padding: 48px 0px 50px;
+}
+
+.popup .keo_price_wrap > h4 {
+    color: #343434;
+}
+
+.popup .keo_price_detail {
+    color: #fff;
+}
+
+.popup .keo_price_wrap ul li {
+    color: #e2fdef;
+    border-bottom-color: #17ba58;
+}
+
+.popup__right h3 {
+    color: #2bcb6b;
+    font-size: 40px
+}
+
+.popup__right h4 {
+    padding: 20px 0 40px;
+    font-size: 20px;
+    color: #939393;
+}
+
+/*for popup*/
+
+.keo_404_wrap a {
+    margin-right: 20px;
+}
+
+.m0 {
+    margin-right: 0 !important;
+}

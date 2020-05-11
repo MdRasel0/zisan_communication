@@ -1,0 +1,357 @@
+/**
+=============================================================
+[Main Stylesheet]
+
+Template:     Hostsun
+Version:      1.0
+Created:      02.02.2019
+Primary use:  Hostsun Responsive, Hosting, Domain and Technology Template
+
+@Author: kode4everyone
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+====================[Table of contents]======================
+
+* 1.0 - Footer css start
+* 2.0 - Copyright css start
+* 3.0 - Aside Heading css start
+* 4.0 - Aside outer wrap css start
+* 5.0 - Aside Search css start
+* 6.0 - Aside Category css start
+* 7.0 - Aside Tags css start
+* 8.0 - Aside Recent Post css start
+
+[Color codes]
+
+Background:	#fafafb (Sliver)
+Content:	#939393 (Light Gray)
+Header h1:	#343434 (Grey Black)
+Header h2:	#343434 (Black)
+Footer:		#939393 (Gray)
+
+a (standard):	#343434 (black)
+a (visited):	#2bcb6b (Lime)
+a (active):	#2bcb6b (Lime)
+
+[Typography]
+  
+Body copy:		16px/ 'Lato', sans-serif;
+Headers:		'Open Sans', sans-serif;
+Input, textarea:	'Open Sans', sans-serif;
+
+=============================================================
+**/
+
+/*
+  ==============================================================
+    Footer css start
+  ==============================================================
+*/
+.keo_footer_bg {
+    background-color: #fafaff;
+    padding: 104px 0px 0px;
+}
+
+.keo_footer_bg .keo_foo_get_touch ul.mb-0.pl-0 li {
+    list-style-type: none;
+}
+
+.keo_footer_bg .keo_foo_get_touch ul.mb-0.pl-0 a {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: #2bcb6b;
+    border-radius: 50%;
+    margin: 0px 10px 20px;
+    border: 1px solid #2bcb6b;
+    transition: all linear .3s;
+    text-align: center;
+}
+
+.keo_footer_bg .keo_foo_get_touch ul.mb-0.pl-0 a i {
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    transition: all linear .08s;
+}
+
+
+.keo_footer_bg .keo_foo_get_touch ul.mb-0.pl-0 a:hover {
+    background: #fff;
+    transition: all linear .3s;
+}
+
+.keo_footer_bg .keo_foo_get_touch ul.mb-0.pl-0 a:hover i {
+    color: #2bcb6b;
+    transition: all linear .08s;
+}
+
+.widget_hdg {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/*Col 1*/
+.keo_foo_about > ul {
+    list-style: none;
+}
+
+.keo_foo_about > ul > li {}
+
+.keo_foo_about > ul > li > span {
+    margin-right: 10px;
+}
+
+.keo_foo_about > ul > li > p {}
+
+.keo_foo_about > ul > li > a {
+    text-decoration: underline;
+    color: #939393;
+}
+
+/*Col 2*/
+.keo_foo_latest_news > ul {
+    list-style: none;
+}
+
+.keo_foo_latest_news > ul > li {
+    margin-bottom: 15px;
+}
+
+.keo_foo_latest_news > ul > li > a {
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.keo_foo_latest_news > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.keo_foo_latest_news > ul > li .keo_posted_on {}
+
+.keo_foo_latest_news > ul > li .keo_posted_on .date {
+    color: #343434;
+}
+
+/*Col 3*/
+.get_touch_form {
+    border-radius: 30px;
+}
+
+.get_touch_form:focus {
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.get_touch_form .newsletter {
+    border: 0px;
+    color: #fff;
+    outline: none;
+}
+
+.get_touch_form .newsletter:focus {
+    box-shadow: 8px 8px 35px 0px rgba(153, 153, 153, 0.08), -8px -8px 35px 0px rgba(153, 153, 153, 0.08);
+}
+
+.get_touch_form > button {
+    background-color: transparent;
+    border: 0px;
+    width: 100px;
+    height: 100%;
+    font-size: 18px;
+    top: 0px;
+    right: 0px;
+    border-left: 1px solid #fbfcfe;
+    cursor: pointer;
+}
+
+/*
+  ==============================================================
+    Copyright css start
+  ==============================================================
+*/
+.keo_copyright_bg {
+    padding: 25px 0px;
+}
+
+.keo_copyright_menu {}
+
+.keo_copyright_menu > ul {}
+
+.keo_copyright_menu > ul > li {}
+
+.keo_copyright_menu > ul > li > a {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.keo_social_link ul {
+    list-style: none;
+}
+
+.keo_social_link ul li a {
+    color: #e2fdef;
+    margin-left: 6px;
+}
+
+.keo_social_link ul li a:hover {
+    color: #ffffff;
+}
+
+/*
+  ==============================================================
+    Aside Heading css start
+  ==============================================================
+*/
+.keo_aside_hdg {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+/*
+  ==============================================================
+    Aside outer wrap css start
+  ==============================================================
+*/
+.keo_aside_outer {
+    padding: 30px 30px 35px;
+}
+
+.aside_border_pdg {
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 35px;
+}
+
+.aside_mrgn {
+    margin-bottom: 40px;
+}
+
+/*
+  ==============================================================
+    Aside Search css start
+  ==============================================================
+*/
+.gt_aside_search form {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.gt_aside_search form input[type="text"] {
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    height: 44px;
+    padding: 5px 50px 8px 15px;
+    outline: none;
+}
+
+.gt_aside_search form button {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #ffffff;
+    border: 0px;
+    cursor: pointer;
+}
+
+.keo_payment_plan > h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/*Hover*/
+.gt_aside_search form input[type="text"]:focus + button,
+.gt_aside_search form button:hover {
+    background-color: #343434;
+}
+
+/*
+  ==============================================================
+    Aside Category css start
+  ==============================================================
+*/
+.gt_aisde_cat {}
+
+.gt_aisde_cat ul {}
+
+.gt_aisde_cat ul li {
+    padding-bottom: 20px;
+}
+
+.gt_aisde_cat ul li:last-child {
+    padding-bottom: 0px;
+}
+
+.gt_aisde_cat ul li a {
+    color: #939393;
+}
+
+.gt_aisde_cat ul li a:hover {
+    text-decoration: underline;
+}
+
+/*
+  ==============================================================
+    Aside Tags css start
+  ==============================================================
+*/
+.gt_aisde_tags {}
+
+.gt_aisde_tags ul {}
+
+.gt_aisde_tags ul li {}
+
+.gt_aisde_tags ul li a {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 5px 18px;
+    margin-bottom: 8px;
+    color: #939393;
+}
+
+.gt_aisde_tags ul li a:hover {
+    color: #ffffff;
+}
+
+/*
+  ==============================================================
+    Aside Recent Post css start
+  ==============================================================
+*/
+.gt_recent_post {}
+
+.gt_recent_post li {
+    margin-bottom: 30px;
+}
+
+.gt_recent_post li:last-child {
+    margin-bottom: 0px;
+}
+
+.gt_recent_post figure {
+    width: 90px;
+}
+
+.gt_post_des {
+    padding-left: 105px;
+    width: auto;
+    float: none;
+}
+
+.gt_recent_post .gt_post_des > a {
+    font-weight: 600;
+}
+
+.gt_recent_post .gt_post_des > a:hover {
+    text-decoration: underline;
+}
+
+.gt_post_des .gt_meta_post > li a {
+    color: #848484;
+}
